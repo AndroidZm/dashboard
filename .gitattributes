@@ -1,0 +1,3 @@
+*.xls -text
+signals/raw/*.tsv -text
+*.gz binary
