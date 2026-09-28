@@ -1,9 +1,9 @@
-﻿# 将本地 dashboard 数据同步到本仓库（排除 HTML），然后提交并推送
+﻿# 将本地回测数据目录同步到本仓库（排除 HTML），然后提交并推送
 # 用法：在本仓库根目录的 PowerShell 中执行  .\sync.ps1
 #   可选参数：-Source <本地数据目录>；推送到当前所在分支
 
 param(
-    [string]$Source = "D:\AppGallery\YMOS\持仓与关注\dashboard"
+    [string]$Source = "D:\AppGallery\ymos-backtest-data"
 )
 
 $ErrorActionPreference = "Stop"
