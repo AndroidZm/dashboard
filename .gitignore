@@ -1,0 +1,9 @@
+# 数据分析 HTML 只在本地查看，不同步到仓库
+*.html
+*.htm
+
+# 系统/编辑器杂项
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
