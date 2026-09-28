@@ -1,0 +1,9 @@
+B per-trade f 1.83 18.9 -10.28 dd -96.4 p10 -96.4 worst -96.4 mc_any 1.0 n 9.0 min final 11.7
+B per-trade f 0.915 59.9 -0.02 dd -85.7 p10 -85.7 worst -85.7 mc_any 0.0 n 11.0 min final 47.7
+B per-trade f 0.46 21.5 -9.2 dd -92.2 p10 -92.2 worst -92.2 mc_any 0.0 n 23.0 min final 21.5
+A per-trade f 1.83 8.1 -18.06 dd -97.3 p10 -97.3 worst -97.3 mc_any 1.0 n 7.0 min final 8.1
+A per-trade f 0.915 153.2 9.76 dd -79.0 p10 -79.0 worst -79.0 mc_any 0.0 n 7.0 min final 153.2
+A per-trade f 0.46 141.0 8.85 dd -66.0 p10 -66.0 worst -66.0 mc_any 0.0 n 11.0 min final 141.0
+F per-trade f 1.83 2.5 -14.2 dd -99.5 p10 -99.5 worst -99.5 mc_any 1.0 n 16.0 min final 1.6
+F per-trade f 0.915 152.7 4.63 dd -85.7 p10 -85.7 worst -85.7 mc_any 0.0 n 18.0 min final 121.5
+F per-trade f 0.46 50.4 -0.84 dd -92.2 p10 -92.2 worst -92.2 mc_any 0.0 n 34.0 min final 50.4

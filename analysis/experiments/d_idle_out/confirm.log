@@ -1,0 +1,20 @@
+base 3
+300_always_r0 8
+300_always_r20 9
+300_ma120_r0 13
+300_ma120_r10 14
+300_ma120_r20 18
+300_ma150_r20 19
+300_ma200h3_r0 20
+300_ma200h3_r20 23
+300_ma250h3_r0 27
+300_ma120_r0_lag1 28
+300_ma120_r20_lag1 29
+300_ma120_r0_monthly 30
+300_ma120_r20_monthly 30
+300_ma120_r0_fee3 31
+300_ma120_r0_band3 32
+300_ma120_r0_band0 33
+852_ma60_r0 38
+g2000_ma40_r0 39
+ALLDONE
