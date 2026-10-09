@@ -127,6 +127,7 @@ class Config:
     mask: np.ndarray | None = field(default=None, repr=False)  # 只用 mask 为 True 的信号
     tier_override: np.ndarray | None = field(default=None, repr=False)  # 自定义档位 (S,)
     weight_fn: object = field(default=None, repr=False)  # weight_fn(s, t, state)->权重，覆盖 weights
+    priority: np.ndarray | None = field(default=None, repr=False)  # (S,) 同日信号执行优先级，大者先买；None=随机
     record: bool = False                       # 返回逐日权益与成交
 
 
@@ -145,7 +146,9 @@ def run(D: Data, cfg: Config, seed: int = 0):
     idx = np.nonzero(sel)[0]
     rng = np.random.default_rng(seed)
     # 同日信号按种子随机排序
-    order = idx[np.lexsort((rng.random(len(idx)), e_arr[idx]))]
+    keys = (rng.random(len(idx)), e_arr[idx]) if cfg.priority is None else \
+        (rng.random(len(idx)), -np.nan_to_num(cfg.priority[idx], nan=-np.inf), e_arr[idx])
+    order = idx[np.lexsort(keys)]
 
     I_cash = _interest_index(D, t0, cfg.cash_rate)
     I_borr = _interest_index(D, t0, cfg.borrow_rate)
